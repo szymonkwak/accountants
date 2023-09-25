@@ -40,7 +40,6 @@ const useFetchAcountants = () => {
         picture: a.picture.medium,
       })) as Accountant[];
     } catch (err) {
-      console.error(err);
       setError(true);
       return null;
     } finally {
