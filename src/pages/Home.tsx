@@ -4,6 +4,7 @@ import { appRoutes } from './routes';
 import { Button, Link } from '../components/base';
 
 const Container = styled.div`
+  padding: 24px;
   height: 80vh;
   display: flex;
   gap: 10px;
@@ -11,6 +12,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  text-align: center;
 `;
 
 const Title = styled.div`

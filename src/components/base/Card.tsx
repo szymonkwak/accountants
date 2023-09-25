@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
-  width: 300px;
   min-width: 300px;
+  max-width: 330px;
   padding: 24px;
   border-radius: 16px;
   border: 1px solid #e4e6e8;

@@ -8,6 +8,7 @@ const FlexRow = styled.div`
 `;
 
 const FlexCol = styled.div`
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 `;
@@ -31,6 +32,9 @@ const NameText = styled.div`
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 const ContentText = styled.div<{ $mb?: boolean; $underline?: boolean }>`
   color: var(--black);
@@ -79,7 +83,7 @@ const AccountantCard = (props: AccountantCardProps) => {
       </InfoText>
       <ContentText>{phone}</ContentText>
       <InfoText $size="14px" $lineHeight="20px" $mt>
-        Średnia cena netto usługi  / m-c
+        Średnia cena netto usługi / m-c
       </InfoText>
       <ContentText $mb>
         350,00 <DisclaimerText>PLN</DisclaimerText>
